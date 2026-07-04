@@ -1,11 +1,11 @@
 import NewsletterForm from '@/components/NewsletterForm';
 
-export const metadata = { title: 'The Company — Klieg House' };
+export const metadata = { title: 'The Company  Klieg House' };
 
 const services = [
   {
     title: 'Premieres',
-    copy: 'End-to-end red carpet production: venue, run of show, seating politics, and the walk itself. We have run premieres in four-hundred-seat revival houses and airport hangars, and we plan both the same way — around the twelve minutes before the lights go down.',
+    copy: 'End-to-end red carpet production: venue, run of show, seating politics, and the walk itself. We have run premieres in four-hundred-seat revival houses and airport hangars, and we plan both the same way around the twelve minutes before the lights go down.',
   },
   {
     title: 'Campaigns',
@@ -20,7 +20,7 @@ const services = [
 const timeline = [
   { year: '2016', copy: 'Founded by three former studio publicists who thought premieres had gotten boring.' },
   { year: '2019', copy: 'Ran our first simultaneous four-city launch for an independent feature with no studio backing.' },
-  { year: '2023', copy: 'Opened the Lisbon office to run European premieres without flying the whole show across an ocean.' },
+  { year: '2023', copy: 'Opened the Vipingo office to run Kenyan premieres without flying the whole show across an ocean.' },
   { year: '2026', copy: 'Currently building five launches at once, from teaser to red carpet.' },
 ];
 
@@ -31,11 +31,11 @@ export default function CompanyPage() {
         <div className="mx-auto max-w-4xl">
           <p className="font-mono text-xs uppercase tracking-widest text-klieg">The company</p>
           <h1 className="mt-2 font-display text-4xl text-paper sm:text-5xl">
-            A studio-adjacent house that only does one night — opening night.
+            A studio-adjacent house that only does one night opening night.
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-carbon">
             Klieg House is a film-launch company. We don&rsquo;t finance films and we don&rsquo;t
-            distribute them — we build the moment a film meets its first audience, and everything
+            distribute them  we build the moment a film meets its first audience, and everything
             that makes that audience show up ready to talk about it the next morning.
           </p>
         </div>
