@@ -22,9 +22,8 @@ klieg-house/
 
 | Page | Screenshot |
 |---|---|
-| Landing  | `docs/screenshots/home.png` |
-| Upcoming Launches | `docs/screenshots/launches.png` |
-| Film detail | `docs/screenshots/film-detail.png` |
-| Company | `docs/screenshots/company.png` |
-| Newsletter success state | `docs/screenshots/newsletter-success.png` |
+| Landing  | `docs/images/home.png` |
+| Upcoming Launches | `docs/images/launches.png` |
+| Film detail | `docs/images/film-detail.png` |
+| Company | `docs/images/company.png` |
 
