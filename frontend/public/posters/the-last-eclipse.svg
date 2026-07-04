@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgLE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B0C10"/>
+      <stop offset="55%" stop-color="#12141c"/>
+      <stop offset="100%" stop-color="#05060a"/>
+    </linearGradient>
+    <radialGradient id="coronaLE" cx="50%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#F2C879" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#F2C879" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#F2C879" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bgLE)"/>
+  <circle cx="400" cy="360" r="240" fill="url(#coronaLE)"/>
+  <circle cx="400" cy="360" r="95" fill="#0B0C10" stroke="#F2C879" stroke-width="2" stroke-opacity="0.6"/>
+  <g stroke="#F2C879" stroke-opacity="0.35">
+    <circle cx="400" cy="360" r="150" fill="none"/>
+    <circle cx="400" cy="360" r="190" fill="none"/>
+  </g>
+  <text x="400" y="760" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="10" fill="#F2C879" opacity="0.85">SCIENCE FICTION</text>
+  <text x="400" y="860" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#F5F3EE">THE LAST</text>
+  <text x="400" y="945" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#F5F3EE">ECLIPSE</text>
+  <line x1="220" y1="985" x2="580" y2="985" stroke="#F2C879" stroke-opacity="0.5"/>
+  <text x="400" y="1030" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#8B8F9B">A KLIEG HOUSE LAUNCH</text>
+</svg>

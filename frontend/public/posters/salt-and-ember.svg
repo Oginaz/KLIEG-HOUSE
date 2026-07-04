@@ -1,0 +1,21 @@
+<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgSE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c2b33"/>
+      <stop offset="45%" stop-color="#3a2a25"/>
+      <stop offset="100%" stop-color="#0B0C10"/>
+    </linearGradient>
+    <linearGradient id="sunSE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2C879"/>
+      <stop offset="100%" stop-color="#7A1F2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bgSE)"/>
+  <circle cx="400" cy="430" r="160" fill="url(#sunSE)" opacity="0.85"/>
+  <rect x="0" y="560" width="800" height="6" fill="#0B0C10" opacity="0.5"/>
+  <path d="M0 600 Q200 560 400 600 T800 600 V1200 H0 Z" fill="#0B0C10" opacity="0.9"/>
+  <text x="400" y="790" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="10" fill="#F2C879" opacity="0.85">ROMANTIC DRAMA</text>
+  <text x="400" y="870" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#F5F3EE">SALT &amp; EMBER</text>
+  <line x1="220" y1="905" x2="580" y2="905" stroke="#F2C879" stroke-opacity="0.5"/>
+  <text x="400" y="950" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#8B8F9B">A KLIEG HOUSE LAUNCH</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgIV" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B1E27"/>
+      <stop offset="60%" stop-color="#0B0C10"/>
+      <stop offset="100%" stop-color="#05060a"/>
+    </linearGradient>
+    <linearGradient id="veil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2C879" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F2C879" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#F2C879" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bgIV)"/>
+  <g stroke="url(#veil)" stroke-width="2">
+    <line x1="-100" y1="150" x2="700" y2="750"/>
+    <line x1="-60" y1="260" x2="740" y2="860"/>
+    <line x1="-20" y1="370" x2="780" y2="970"/>
+    <line x1="20" y1="480" x2="820" y2="1080"/>
+  </g>
+  <rect x="0" y="0" width="800" height="1200" fill="#0B0C10" opacity="0.15"/>
+  <text x="400" y="780" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="10" fill="#F2C879" opacity="0.85">HEIST / ACTION</text>
+  <text x="400" y="880" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700" fill="#F5F3EE">IRONVEIL</text>
+  <line x1="220" y1="920" x2="580" y2="920" stroke="#F2C879" stroke-opacity="0.5"/>
+  <text x="400" y="965" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#8B8F9B">A KLIEG HOUSE LAUNCH</text>
+</svg>
