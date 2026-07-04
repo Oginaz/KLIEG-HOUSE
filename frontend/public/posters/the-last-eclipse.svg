@@ -1,26 +1,83 @@
 <svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgLE" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0B0C10"/>
-      <stop offset="55%" stop-color="#12141c"/>
-      <stop offset="100%" stop-color="#05060a"/>
+      <stop offset="0%" stop-color="#05060a"/>
+      <stop offset="45%" stop-color="#0B0C10"/>
+      <stop offset="100%" stop-color="#020203"/>
     </linearGradient>
-    <radialGradient id="coronaLE" cx="50%" cy="30%" r="45%">
-      <stop offset="0%" stop-color="#F2C879" stop-opacity="0.95"/>
-      <stop offset="55%" stop-color="#F2C879" stop-opacity="0.15"/>
+    <radialGradient id="coronaLE" cx="50%" cy="34%" r="42%">
+      <stop offset="0%" stop-color="#050506"/>
+      <stop offset="34%" stop-color="#050506"/>
+      <stop offset="40%" stop-color="#F2C879" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#F2C879" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#F2C879" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="glowLE" cx="50%" cy="34%" r="60%">
+      <stop offset="0%" stop-color="#F2C879" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#F2C879" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="groundLE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B0C10" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
   </defs>
+
   <rect width="800" height="1200" fill="url(#bgLE)"/>
-  <circle cx="400" cy="360" r="240" fill="url(#coronaLE)"/>
-  <circle cx="400" cy="360" r="95" fill="#0B0C10" stroke="#F2C879" stroke-width="2" stroke-opacity="0.6"/>
-  <g stroke="#F2C879" stroke-opacity="0.35">
-    <circle cx="400" cy="360" r="150" fill="none"/>
-    <circle cx="400" cy="360" r="190" fill="none"/>
+
+  <!-- stars -->
+  <g fill="#F5F3EE">
+    <circle cx="70" cy="90" r="1.3" opacity="0.6"/>
+    <circle cx="130" cy="200" r="1" opacity="0.4"/>
+    <circle cx="710" cy="120" r="1.4" opacity="0.6"/>
+    <circle cx="650" cy="230" r="1" opacity="0.5"/>
+    <circle cx="90" cy="330" r="1.2" opacity="0.5"/>
+    <circle cx="740" cy="340" r="1.1" opacity="0.4"/>
+    <circle cx="40" cy="480" r="1" opacity="0.4"/>
+    <circle cx="760" cy="470" r="1.3" opacity="0.5"/>
+    <circle cx="200" cy="60" r="1" opacity="0.4"/>
+    <circle cx="600" cy="70" r="1" opacity="0.45"/>
   </g>
-  <text x="400" y="760" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="10" fill="#F2C879" opacity="0.85">SCIENCE FICTION</text>
-  <text x="400" y="860" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#F5F3EE">THE LAST</text>
-  <text x="400" y="945" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#F5F3EE">ECLIPSE</text>
-  <line x1="220" y1="985" x2="580" y2="985" stroke="#F2C879" stroke-opacity="0.5"/>
-  <text x="400" y="1030" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#8B8F9B">A KLIEG HOUSE LAUNCH</text>
+
+  <!-- ambient glow behind corona -->
+  <circle cx="400" cy="410" r="380" fill="url(#glowLE)"/>
+
+  <!-- data / countdown rings -->
+  <g stroke="#F2C879" fill="none">
+    <circle cx="400" cy="410" r="165" stroke-opacity="0.3" stroke-width="1"/>
+    <circle cx="400" cy="410" r="205" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="2 10"/>
+    <circle cx="400" cy="410" r="245" stroke-opacity="0.12" stroke-width="1"/>
+  </g>
+
+  <!-- eclipse / corona -->
+  <circle cx="400" cy="410" r="150" fill="url(#coronaLE)"/>
+  <circle cx="400" cy="410" r="96" fill="#020203"/>
+  <circle cx="400" cy="410" r="96" fill="none" stroke="#F2C879" stroke-width="1.5" stroke-opacity="0.7"/>
+
+  <!-- tiny research station silhouette against the corona -->
+  <g fill="#020203">
+    <rect x="378" y="470" width="44" height="10" rx="2"/>
+    <rect x="392" y="452" width="16" height="20"/>
+    <line x1="360" y1="466" x2="378" y2="474" stroke="#020203" stroke-width="4"/>
+    <line x1="440" y1="466" x2="422" y2="474" stroke="#020203" stroke-width="4"/>
+    <circle cx="400" cy="452" r="5"/>
+  </g>
+
+  <!-- countdown readout -->
+  <text x="400" y="620" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" letter-spacing="6" fill="#F2C879" opacity="0.85">T-MINUS 00:06:00</text>
+
+  <!-- ground shadow fading up -->
+  <rect x="0" y="700" width="800" height="500" fill="url(#groundLE)"/>
+
+  <!-- eyebrow -->
+  <text x="400" y="800" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="10" fill="#F2C879" opacity="0.85">SCIENCE FICTION / THRILLER</text>
+
+  <!-- title -->
+  <text x="400" y="895" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#F5F3EE" letter-spacing="2">THE LAST</text>
+  <text x="400" y="978" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#F5F3EE" letter-spacing="2">ECLIPSE</text>
+
+  <!-- tagline -->
+  <text x="400" y="1020" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic" fill="#C9D3CE" opacity="0.85">Six minutes of totality. One chance to stop what she started.</text>
+
+  <line x1="220" y1="1055" x2="580" y2="1055" stroke="#F2C879" stroke-opacity="0.5"/>
+  <text x="400" y="1100" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#8B8F9B">A KLIEG HOUSE LAUNCH</text>
 </svg>

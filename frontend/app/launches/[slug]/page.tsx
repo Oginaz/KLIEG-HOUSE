@@ -100,7 +100,7 @@ export default async function FilmDetailPage({ params }: Props) {
             <div className="mt-10">
               <h2 className="font-display text-2xl text-paper">Teaser</h2>
               <p className="mt-4 max-w-md rounded-md border border-white/10 bg-stage p-5 font-mono text-xs uppercase tracking-widest text-carbon">
-                Teaser has not dropped yet — join the list below to be first to see it.
+                Teaser has not dropped yet join the list below to be first to see it.
               </p>
             </div>
           )}

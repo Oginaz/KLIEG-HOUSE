@@ -1,24 +1,98 @@
-<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="bgGH" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F2C879"/>
-      <stop offset="45%" stop-color="#7A1F2B"/>
+      <stop offset="0%" stop-color="#FCEBC0"/>
+      <stop offset="35%" stop-color="#F2C879"/>
+      <stop offset="65%" stop-color="#7A1F2B"/>
       <stop offset="100%" stop-color="#0B0C10"/>
     </linearGradient>
   </defs>
+
   <rect width="800" height="1200" fill="url(#bgGH)"/>
-  <g fill="#0B0C10" opacity="0.85">
-    <rect x="0" y="620" width="90" height="300"/>
-    <rect x="100" y="560" width="70" height="360"/>
-    <rect x="180" y="660" width="110" height="260"/>
-    <rect x="300" y="500" width="80" height="420"/>
-    <rect x="390" y="600" width="60" height="320"/>
-    <rect x="460" y="540" width="100" height="380"/>
-    <rect x="570" y="640" width="90" height="280"/>
-    <rect x="670" y="580" width="70" height="340"/>
-    <rect x="750" y="650" width="50" height="270"/>
+
+  <!-- string lights strung across the top, the club's last decoration -->
+  <path d="M0 90 Q200 150 400 90 T800 90" fill="none" stroke="#0B0C10" stroke-opacity="0.4" stroke-width="2"/>
+  <g fill="#FCEBC0" opacity="0.9">
+    <circle cx="60" cy="112" r="4"/>
+    <circle cx="160" cy="138" r="4"/>
+    <circle cx="260" cy="118" r="4"/>
+    <circle cx="360" cy="98" r="4"/>
+    <circle cx="460" cy="98" r="4"/>
+    <circle cx="560" cy="118" r="4"/>
+    <circle cx="660" cy="138" r="4"/>
+    <circle cx="750" cy="112" r="4"/>
   </g>
-  <text x="400" y="965" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="10" fill="#0B0C10" opacity="0.8">MUSICAL DRAMA</text>
-  <text x="400" y="1045" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#0B0C10">GOLDEN HOUR CITY</text>
-  <text x="400" y="1090" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#0B0C10" opacity="0.7">A KLIEG HOUSE LAUNCH</text>
+
+  <!-- distant skyline, low, so it stays out of the way of the band and title -->
+  <g fill="#0B0C10" opacity="0.85">
+    <rect x="0" y="660" width="90" height="90"/>
+    <rect x="100" y="630" width="70" height="120"/>
+    <rect x="180" y="650" width="110" height="100"/>
+    <rect x="300" y="610" width="80" height="140"/>
+    <rect x="390" y="640" width="60" height="110"/>
+    <rect x="460" y="620" width="100" height="130"/>
+    <rect x="570" y="645" width="90" height="105"/>
+    <rect x="670" y="625" width="70" height="125"/>
+    <rect x="750" y="650" width="50" height="100"/>
+  </g>
+
+  <text x="400" y="600" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="10" fill="#0B0C10" opacity="0.75">MUSICAL DRAMA</text>
+
+  <!-- club marquee, one bulb dead, on its last night -->
+  <rect x="300" y="700" width="200" height="46" fill="#0B0C10"/>
+  <text x="400" y="731" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" letter-spacing="3" fill="#F2C879">EL FAROL</text>
+  <g fill="#F2C879">
+    <circle cx="310" cy="706" r="3"/>
+    <circle cx="330" cy="706" r="3"/>
+    <circle cx="350" cy="706" r="3"/>
+    <circle cx="370" cy="706" r="3" opacity="0.2"/>
+    <circle cx="390" cy="706" r="3"/>
+    <circle cx="410" cy="706" r="3"/>
+    <circle cx="430" cy="706" r="3"/>
+    <circle cx="450" cy="706" r="3" opacity="0.2"/>
+    <circle cx="470" cy="706" r="3"/>
+    <circle cx="490" cy="706" r="3"/>
+  </g>
+
+  <!-- ground the band stands on -->
+  <rect x="0" y="750" width="800" height="450" fill="#0B0C10" opacity="0.55"/>
+
+  <!-- mariachi collective: back row (smaller, higher = further away), then front row (larger, closer) -->
+  <g fill="#05060a">
+    <g id="trumpetGH">
+      <circle cx="0" cy="-70" r="13"/>
+      <path d="M-16,-56 Q0,-64 16,-56 L20,20 L-20,20 Z"/>
+      <path d="M16,-50 Q50,-60 70,-45" stroke="#05060a" stroke-width="6" fill="none"/>
+    </g>
+    <g id="guitarronGH">
+      <circle cx="0" cy="-78" r="14"/>
+      <path d="M-17,-63 Q0,-71 17,-63 L22,30 L-22,30 Z"/>
+      <ellipse cx="6" cy="10" rx="26" ry="34" opacity="0.9"/>
+    </g>
+    <g id="violinGH">
+      <circle cx="0" cy="-70" r="13"/>
+      <path d="M-16,-56 Q0,-64 16,-56 L18,24 L-18,24 Z"/>
+      <path d="M-14,-52 Q-46,-70 -60,-60" stroke="#05060a" stroke-width="5" fill="none"/>
+    </g>
+
+    <!-- back row: further away, smaller, sitting higher on the ground plane -->
+    <use xlink:href="#trumpetGH" transform="translate(150 870) scale(0.68)"/>
+    <use xlink:href="#guitarronGH" transform="translate(310 855) scale(0.68)"/>
+    <use xlink:href="#violinGH" transform="translate(490 855) scale(0.68)"/>
+    <use xlink:href="#trumpetGH" transform="translate(650 870) scale(0.68)"/>
+
+    <!-- front row: closer, larger, feet near the bottom of the frame -->
+    <use xlink:href="#trumpetGH" transform="translate(190 1040) scale(1.15)"/>
+    <use xlink:href="#guitarronGH" transform="translate(320 1055) scale(1.25)"/>
+    <use xlink:href="#violinGH" transform="translate(460 1050) scale(1.2)"/>
+    <use xlink:href="#trumpetGH" transform="translate(590 1040) scale(1.15)"/>
+  </g>
+
+  <rect x="0" y="1080" width="800" height="120" fill="#0B0C10" opacity="0.7"/>
+
+  <text x="400" y="1075" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#FCEBC0">GOLDEN HOUR CITY</text>
+  <text x="400" y="1110" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" fill="#F2C879" opacity="0.9">One more night to play for the room that raised them.</text>
+
+  <line x1="220" y1="1145" x2="580" y2="1145" stroke="#F2C879" stroke-opacity="0.6"/>
+  <text x="400" y="1175" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#FCEBC0" opacity="0.85">A KLIEG HOUSE LAUNCH</text>
 </svg>

@@ -1,21 +1,82 @@
 <svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgSE" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1c2b33"/>
-      <stop offset="45%" stop-color="#3a2a25"/>
-      <stop offset="100%" stop-color="#0B0C10"/>
+    <linearGradient id="skySE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2C879"/>
+      <stop offset="40%" stop-color="#D68A4C"/>
+      <stop offset="70%" stop-color="#7A1F2B"/>
+      <stop offset="100%" stop-color="#2b1512"/>
     </linearGradient>
     <linearGradient id="sunSE" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F2C879"/>
-      <stop offset="100%" stop-color="#7A1F2B"/>
+      <stop offset="0%" stop-color="#FCEBC0"/>
+      <stop offset="100%" stop-color="#F2C879"/>
+    </linearGradient>
+    <linearGradient id="waterSE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A1F2B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1c2b33"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="1200" fill="url(#bgSE)"/>
-  <circle cx="400" cy="430" r="160" fill="url(#sunSE)" opacity="0.85"/>
-  <rect x="0" y="560" width="800" height="6" fill="#0B0C10" opacity="0.5"/>
-  <path d="M0 600 Q200 560 400 600 T800 600 V1200 H0 Z" fill="#0B0C10" opacity="0.9"/>
-  <text x="400" y="790" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="10" fill="#F2C879" opacity="0.85">ROMANTIC DRAMA</text>
-  <text x="400" y="870" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#F5F3EE">SALT &amp; EMBER</text>
-  <line x1="220" y1="905" x2="580" y2="905" stroke="#F2C879" stroke-opacity="0.5"/>
-  <text x="400" y="950" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#8B8F9B">A KLIEG HOUSE LAUNCH</text>
+
+  <rect width="800" height="1200" fill="url(#skySE)"/>
+
+  <!-- setting sun, low -->
+  <circle cx="400" cy="470" r="120" fill="url(#sunSE)"/>
+
+  <!-- birds -->
+  <g stroke="#7A1F2B" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M180 260 q10 -10 20 0 q10 -10 20 0"/>
+    <path d="M560 300 q8 -8 16 0 q8 -8 16 0"/>
+  </g>
+
+  <!-- harbor water -->
+  <rect x="0" y="560" width="800" height="120" fill="url(#waterSE)"/>
+  <g stroke="#F2C879" stroke-opacity="0.35" stroke-width="2">
+    <line x1="0" y1="580" x2="800" y2="580"/>
+    <line x1="0" y1="605" x2="800" y2="605"/>
+    <line x1="0" y1="630" x2="800" y2="630"/>
+  </g>
+
+  <!-- fishing boats, small silhouettes on the water -->
+  <g fill="#12181c">
+    <path d="M120 600 q20 -10 40 0 l-4 10 l-32 0 Z"/>
+    <line x1="140" y1="600" x2="140" y2="580" stroke="#12181c" stroke-width="2"/>
+    <path d="M640 610 q22 -11 44 0 l-4 10 l-36 0 Z"/>
+    <line x1="662" y1="610" x2="662" y2="588" stroke="#12181c" stroke-width="2"/>
+  </g>
+
+  <!-- cannery / harbor building silhouette skyline -->
+  <g fill="#12181c">
+    <rect x="0" y="600" width="800" height="90"/>
+    <rect x="40" y="520" width="60" height="80"/>
+    <rect x="120" y="560" width="30" height="40"/>
+    <rect x="600" y="540" width="70" height="60"/>
+    <rect x="690" y="570" width="34" height="30"/>
+    <!-- smokestack, cold, no smoke: the cannery is dying -->
+    <rect x="60" y="470" width="14" height="55"/>
+  </g>
+
+  <!-- steam rising from the kitchen pass, warm and alive against the cold building -->
+  <g stroke="#F5F3EE" stroke-opacity="0.35" fill="none" stroke-width="4" stroke-linecap="round">
+    <path d="M380 650 q-10 -20 0 -40 q10 -20 0 -40"/>
+    <path d="M420 650 q10 -20 0 -40 q-10 -20 0 -40"/>
+  </g>
+
+  <!-- two silhouettes facing off across a kitchen counter -->
+  <g fill="#0B0C10">
+    <path d="M320 800 Q320 745 354 745 Q388 745 388 800 L392 855 L316 855 Z"/>
+    <circle cx="354" cy="726" r="16"/>
+    <path d="M480 800 Q480 745 446 745 Q412 745 412 800 L408 855 L484 855 Z"/>
+    <circle cx="446" cy="726" r="16"/>
+    <!-- counter between them -->
+    <rect x="300" y="855" width="200" height="16"/>
+    <rect x="300" y="871" width="200" height="70" opacity="0.9"/>
+  </g>
+
+  <rect x="0" y="900" width="800" height="300" fill="#0B0C10" opacity="0.55"/>
+
+  <text x="400" y="960" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="10" fill="#F2C879" opacity="0.9">ROMANTIC DRAMA</text>
+  <text x="400" y="1045" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" fill="#F5F3EE">SALT &amp; EMBER</text>
+  <text x="400" y="1085" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-style="italic" fill="#F5F3EE" opacity="0.85">One kitchen. One summer. No one watching.</text>
+
+  <line x1="220" y1="1120" x2="580" y2="1120" stroke="#F2C879" stroke-opacity="0.5"/>
+  <text x="400" y="1160" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" letter-spacing="4" fill="#C9D3CE">A KLIEG HOUSE LAUNCH</text>
 </svg>

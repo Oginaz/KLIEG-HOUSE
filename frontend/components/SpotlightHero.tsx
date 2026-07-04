@@ -17,7 +17,7 @@ export default function SpotlightHero() {
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-6">
         <p className="rise-in font-mono text-xs uppercase tracking-marquee text-klieg" style={{ animationDelay: '0.9s' }}>
-          A film-launch house &middot; Est. Los Angeles
+          A film-launch house &middot; Est. Vipingo
         </p>
         <h1
           className="rise-in max-w-4xl font-display text-5xl leading-[1.05] text-paper sm:text-6xl md:text-7xl"
