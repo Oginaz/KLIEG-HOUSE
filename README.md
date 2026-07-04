@@ -10,15 +10,15 @@ Laravel API.
 **Repo layout — monorepo:**
 ```
 klieg-house/
-├── frontend/   Next.js 14 (App Router) — the site itself
-└── api/        Laravel — /api/films and /api/subscribers
+├── frontend/   Next.js 14 (App Router) the site itself
+└── api/        Laravel  /api/films and /api/subscribers
+└── docs/       documents /Images
+└── README.md   README.md file
 ```
 
 ---
 
 ## Screenshots
-
-
 
 | Page | Screenshot |
 |---|---|
